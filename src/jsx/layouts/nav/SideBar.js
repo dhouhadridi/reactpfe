@@ -159,6 +159,20 @@ class SideBar extends Component {
 
                   <li
                      className={`${
+                        "teams".includes(path.slice(1)) ? "mm-active" : ""
+                     }`}
+                  >
+                     <Link
+                        to="teams"
+                        className="ai-icon"
+                        aria-expanded="false"
+                     >
+                        <i className="flaticon-381-database-1"></i>
+                        <span className="nav-text">Teams</span>
+                     </Link>
+                  </li>
+                  <li
+                     className={`${
                         "users".includes(path.slice(1)) ? "mm-active" : ""
                      }`}
                   >
@@ -167,7 +181,7 @@ class SideBar extends Component {
                         className="ai-icon"
                         aria-expanded="false"
                      >
-                        <i className="flaticon-381-user"></i>
+                        <i className="flaticon-381-database-1"></i>
                         <span className="nav-text">Users</span>
                      </Link>
                   </li>

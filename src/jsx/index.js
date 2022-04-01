@@ -11,7 +11,8 @@ import "./chart.css";
 import Nav from "./layouts/nav";
 import Footer from "./layouts/Footer";
 ///mypages
-import Users from "./components/mypages/users";
+import teams from "./components/mypages/teams";
+import users from "./components/mypages/users"
 /// Pages
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
@@ -184,7 +185,8 @@ const Markup = () => {
       { url: "page-error-503", component: Error503 },
 
       ///mypages
-      { url: "Users", component: Users },
+      { url: "teams", component:teams },
+      { url: "tsers", component:users}
    ];
 
    return (
